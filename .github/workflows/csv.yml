@@ -39,9 +39,9 @@ jobs:
               if (key.toLowerCase().includes('signal') && entry[key]) {
                 entry[key] = 'S' + entry[key];
               }
-              // Split 'needs', 'holds', 'holdsN' into arrays
-              if (['needs', 'holds', 'holdsn'].includes(key.toLowerCase()) && entry[key]) {
-                entry[key] = entry[key].split(' ');
+              // Split 'needs', 'holds', 'holdsN' into arrays, or set as empty array if empty
+              if (['needs', 'holds', 'holdsn'].includes(key.toLowerCase())) {
+                entry[key] = entry[key] ? entry[key].split(' ') : [];
               }
             }
             return entry;
