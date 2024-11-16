@@ -21,12 +21,33 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install csvtojson package
-        run: npm install -g csvtojson
+      - name: Install dependencies
+        run: |
+          npm install -g csvtojson
+          echo '{
+            "type": "module"
+          }' > package.json
 
       - name: Convert CSV to JSON
-        run: csvtojson data.csv > data.json
+        run: |
+          csvtojson data.csv > temp.json
 
+      - name: Add "S" before signal numbers
+        run: |
+          node -e "
+          import fs from 'fs';
+          const data = JSON.parse(fs.readFileSync('temp.json', 'utf-8'));
+          const updated = data.map(entry => {
+            for (const key in entry) {
+              if (key.toLowerCase().includes('signal') && entry[key]) {
+                entry[key] = 'S' + entry[key];
+              }
+            }
+            return entry;
+          });
+          fs.writeFileSync('data.json', JSON.stringify(updated, null, 2));
+          "
+      
       - name: Commit and push JSON file
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -37,4 +58,3 @@ jobs:
           git add data.json
           git commit -m "[generated] ${GITHUB_EVENT_HEAD_COMMIT_MESSAGE#[refresh]}"
           git push
-          
