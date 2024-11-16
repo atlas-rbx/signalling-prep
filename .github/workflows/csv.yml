@@ -28,15 +28,20 @@ jobs:
         run: |
           csvtojson data.csv > temp.json
 
-      - name: Add "S" before signal numbers
+      - name: Process JSON data
         run: |
           node -e "
           const fs = require('fs');
           const data = JSON.parse(fs.readFileSync('temp.json', 'utf-8'));
           const updated = data.map(entry => {
             for (const key in entry) {
+              // Add "S" prefix to signal numbers
               if (key.toLowerCase().includes('signal') && entry[key]) {
                 entry[key] = 'S' + entry[key];
+              }
+              // Split 'needs', 'holds', 'holdsN' into arrays
+              if (['needs', 'holds', 'holdsn'].includes(key.toLowerCase()) && entry[key]) {
+                entry[key] = entry[key].split(' ');
               }
             }
             return entry;
