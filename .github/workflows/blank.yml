@@ -1,0 +1,35 @@
+name: Convert CSV to JSON
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  csv-to-json:
+    if: startsWith(github.event.head_commit.message, '[refresh]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install csvtojson package
+        run: npm install -g csvtojson
+
+      - name: Convert CSV to JSON
+        run: csvtojson data.csv > data.json
+
+      - name: Commit and push JSON file
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add data.json
+          git commit -m "[generated] ${GITHUB_EVENT_HEAD_COMMIT_MESSAGE#[refresh]}"
+          git push
+        env:
+          GITHUB_EVENT_HEAD_COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
