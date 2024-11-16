@@ -22,11 +22,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: |
-          npm install -g csvtojson
-          echo '{
-            "type": "module"
-          }' > package.json
+        run: npm install -g csvtojson
 
       - name: Convert CSV to JSON
         run: |
@@ -35,7 +31,7 @@ jobs:
       - name: Add "S" before signal numbers
         run: |
           node -e "
-          import fs from 'fs';
+          const fs = require('fs');
           const data = JSON.parse(fs.readFileSync('temp.json', 'utf-8'));
           const updated = data.map(entry => {
             for (const key in entry) {
