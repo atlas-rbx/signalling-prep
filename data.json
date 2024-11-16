@@ -2,9 +2,9 @@
   {
     "signal": "S1",
     "stype": "stop",
-    "needs": "",
-    "holdsN": "",
-    "holds": "",
+    "needs": [],
+    "holdsN": [],
+    "holds": [],
     "nameplate": "UP OUTER HOME"
   },
   {
@@ -25,7 +25,7 @@
       "23",
       "29"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "UP DISTANT"
   },
   {
@@ -71,21 +71,21 @@
   {
     "signal": "S5",
     "stype": "point_sl",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "38",
       "37",
       "3",
       "4"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "CROSSING - REV TO DOWN"
   },
   {
     "signal": "S6",
     "stype": "fpl_int",
-    "needs": "",
-    "holdsN": "",
+    "needs": [],
+    "holdsN": [],
     "holds": [
       "5"
     ],
@@ -94,7 +94,7 @@
   {
     "signal": "S7",
     "stype": "point_sl",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "37",
       "39",
@@ -102,7 +102,7 @@
       "40",
       "42"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "CROSSING - UP TO DOWN"
   },
   {
@@ -128,19 +128,19 @@
   {
     "signal": "S9",
     "stype": "point",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "39",
       "41"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "CROSSOVER - LES TO REV"
   },
   {
     "signal": "S10",
     "stype": "fpl",
-    "needs": "",
-    "holdsN": "",
+    "needs": [],
+    "holdsN": [],
     "holds": [
       "9"
     ],
@@ -149,19 +149,19 @@
   {
     "signal": "S11",
     "stype": "point",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "39",
       "13"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "CROSSING - REV TO P3"
   },
   {
     "signal": "S12",
     "stype": "fpl",
-    "needs": "",
-    "holdsN": "",
+    "needs": [],
+    "holdsN": [],
     "holds": [
       "11"
     ],
@@ -170,13 +170,13 @@
   {
     "signal": "S13",
     "stype": "shunt",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "11",
       "41",
       "42"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "SHUNT - CS TO P3"
   },
   {
@@ -198,7 +198,7 @@
       "35",
       "36"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "P3 UP STARTER"
   },
   {
@@ -225,13 +225,13 @@
       "27",
       "31"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "P3 UP SHUNT"
   },
   {
     "signal": "S16",
     "stype": "stop",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "15",
       "14",
@@ -241,13 +241,13 @@
       "20",
       "21"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "P2 UP STARTER"
   },
   {
     "signal": "S17",
     "stype": "shunt",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "14",
       "15",
@@ -260,7 +260,7 @@
       "21",
       "27"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "P2  UP SHUNT"
   },
   {
@@ -278,7 +278,7 @@
       "20",
       "21"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "P1 UP STARTER"
   },
   {
@@ -299,55 +299,55 @@
       "34",
       "7"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "P1 UP SHUNT"
   },
   {
     "signal": "S20",
     "stype": "c_lock",
-    "needs": "",
-    "holdsN": "",
-    "holds": "",
+    "needs": [],
+    "holdsN": [],
+    "holds": [],
     "nameplate": "CROSSING LOCKS"
   },
   {
     "signal": "S21",
     "stype": "c_stop",
-    "needs": "",
-    "holdsN": "",
-    "holds": "",
+    "needs": [],
+    "holdsN": [],
+    "holds": [],
     "nameplate": "CROSSING STOPS"
   },
   {
     "signal": "S22",
     "stype": "point_sl",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "36",
       "19",
       "18"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "CROSSING - DOWN TO P3"
   },
   {
     "signal": "S23",
     "stype": "point",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "35",
       "36",
       "17",
       "16"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "CROSSING - P1 TO UP"
   },
   {
     "signal": "S24",
     "stype": "fpl",
-    "needs": "",
-    "holdsN": "",
+    "needs": [],
+    "holdsN": [],
     "holds": [
       "23"
     ],
@@ -362,7 +362,7 @@
     "holdsN": [
       "34"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "CL DIVERGE"
   },
   {
@@ -372,19 +372,19 @@
       "25",
       "30"
     ],
-    "holdsN": "",
-    "holds": "",
+    "holdsN": [],
+    "holds": [],
     "nameplate": "CL DISTANT"
   },
   {
     "signal": "S27",
     "stype": "stop",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "29",
       "34"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "UP DIVERGE"
   },
   {
@@ -394,43 +394,43 @@
       "27",
       "31"
     ],
-    "holdsN": "",
-    "holds": "",
+    "holdsN": [],
+    "holds": [],
     "nameplate": "UP DISTANT"
   },
   {
     "signal": "S29",
     "stype": "point_sl",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "27",
       "34"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "CROSSING - UP TO CL"
   },
   {
     "signal": "S30",
     "stype": "stop_release",
-    "needs": "",
-    "holdsN": "",
-    "holds": "",
+    "needs": [],
+    "holdsN": [],
+    "holds": [],
     "nameplate": "CL A. STARTER"
   },
   {
     "signal": "S31",
     "stype": "stop_release",
-    "needs": "",
-    "holdsN": "",
-    "holds": "",
+    "needs": [],
+    "holdsN": [],
+    "holds": [],
     "nameplate": "UP A. STARTER"
   },
   {
     "signal": "S32",
     "stype": "stop",
-    "needs": "",
-    "holdsN": "",
-    "holds": "",
+    "needs": [],
+    "holdsN": [],
+    "holds": [],
     "nameplate": "DOWN OUTER HOME"
   },
   {
@@ -441,8 +441,8 @@
       "37",
       "43"
     ],
-    "holdsN": "",
-    "holds": "",
+    "holdsN": [],
+    "holds": [],
     "nameplate": "DOWN DISTANT"
   },
   {
@@ -488,13 +488,13 @@
       "20",
       "21"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "DOWN DIVERGE P3"
   },
   {
     "signal": "S36",
     "stype": "stop",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "14",
       "15",
@@ -508,19 +508,19 @@
       "24",
       "22"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "DOWN INNER HOME"
   },
   {
     "signal": "S37",
     "stype": "stop",
-    "needs": "",
+    "needs": [],
     "holdsN": [
       "38",
       "7",
       "5"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "P1 STARTER"
   },
   {
@@ -540,7 +540,7 @@
       "3",
       "4"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "SHUNT P1"
   },
   {
@@ -559,7 +559,7 @@
       "9",
       "7"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "P2 STARTER"
   },
   {
@@ -580,7 +580,7 @@
       "3",
       "4"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "SHUNT P2"
   },
   {
@@ -603,7 +603,7 @@
       "3",
       "4"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "P3 STARTER"
   },
   {
@@ -626,15 +626,15 @@
       "4",
       "5"
     ],
-    "holds": "",
+    "holds": [],
     "nameplate": "SHUNT P3"
   },
   {
     "signal": "S43",
     "stype": "stop_release",
-    "needs": "",
-    "holdsN": "",
-    "holds": "",
+    "needs": [],
+    "holdsN": [],
+    "holds": [],
     "nameplate": "DOWN A. STARTER"
   },
   {
@@ -667,17 +667,17 @@
   {
     "signal": "S45",
     "stype": "spare",
-    "needs": "",
-    "holdsN": "",
-    "holds": "",
+    "needs": [],
+    "holdsN": [],
+    "holds": [],
     "nameplate": "SPARE"
   },
   {
     "signal": "S46",
     "stype": "spare",
-    "needs": "",
-    "holdsN": "",
-    "holds": "",
+    "needs": [],
+    "holdsN": [],
+    "holds": [],
     "nameplate": "SPARE"
   }
 ]
